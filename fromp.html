@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>form styling</title>
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height:1.2em;
+      /* font-size: 1.2em; */
+      background-color:rgba(7, 43, 109, 0.849);
+      
+
+    }
+    .container{ 
+      max-width:400px;
+      padding:20px;
+      margin:30px auto;
+    }
+    .form-wrap{
+      background-color:#fff;
+      /* width:300px; */
+      border-radius:10px;
+      padding:10px 25px;
+      /* text-align:center; */
+      
+    }
+    .form-wrap #sign-up{
+      text-align:center;
+      font-weight: bold;
+      color:rgb(17, 63, 161);
+    }
+    .form-wrap p{
+      text-align:center;
+      font-size:0.9em;
+      margin-top:10px;
+      margin-bottom:20px;
+      
+    }
+    .form-wrap .form-group{
+      display:block;
+      color:#555;
+      float:left;
+      margin-top:15px;
+      
+    }
+    .form-wrap .form-group label{
+      display:block;
+      
+    }
+    .form-wrap .form-group .form-control{
+      /* display:block; */
+      padding:10px;
+      margin-right:10px;
+      width:132px;
+      outline:none;
+      backface-visibility: hidden;
+      border-radius:5px;
+      border:1px solid #000;
+    }
+
+    .btn{
+      margin-top:70px;
+      text-align:center;
+      display:block;
+      border-radius:5px;
+      padding:10px 12px;
+      color:#fff;
+      background-color:#37a;
+      border:none;
+      width:100%;
+      
+    }
+    .btn:hover{
+      background-color:rgba(12, 93, 155, 0.533);
+      cursor:pointer;
+    }
+    .form-text{
+      text-align:center;
+      font-size:13px;
+    }
+    .form-text a{
+      text-decoration:none;
+    }
+    .form-text a:hover{
+      cursor: pointer;
+      color:#37a;
+    }
+    footer{
+      text-align:center;
+    }
+    footer p{
+      padding:10px;
+      font-size:13px;
+      color:#fff;
+    }
+    footer a{
+      text-decoration:none;
+      /* font-size:13px; */
+      color:green;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="" class="form-wrap">
+      <h1 id="sign-up">Sign Up</h1>
+      <p>It's free it only takes a minute</p>
+      <div class="form-group">
+        <label for="name">First Name</label>
+        <input type="text" class="form-control" id="firstName">
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input type="text" class="form-control" id="lastName">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password">
+      </div>
+
+      <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" class="form-control" id="confirm-password">
+      </div>
+      <button type="submit" class="btn">Sign Up</button>
+      <p class="form-text">By clicking the sign up button you agree to our <a href="#">Terms and Conditions</a>
+      and <a href="#">Privacy Policy</a></p>
+    </form>
+    <footer>
+      <p>Already have an account?<a href="#">Log in </a> here</p>
+    </footer>
+  </div>
+  
+</body>
+</html>
